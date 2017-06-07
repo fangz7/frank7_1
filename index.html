@@ -1,33 +1,30 @@
- 
 <html>
-  <head>  
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />  
-<title>九九乘法表</title>  
-  
-<style type="text/css">  
+<head>  
+<title>99乘法表</title>  
+ <style type="text/css">  
 table{  
-    width:600px;  
+    width:550px;  
     border-collapse:collapse;  
     }  
 table th{  
-    border:#CC0000 1px solid  
-    } 
-<script type="text/javascript">
-document.write("<table>")
-for (var i =1; i<=9; i++)
-{
-document.write("<tr>");
-for (var j =1; j<=i; j++)
-{
-document.write("<td>");
-document.write(i+"*"+j+"="+i*j);
-document.write("</td>");
-}
-document.write("</tr>");
-}
-document.write("</table>")
-</script>
-</head>
-<body>
-</body>
+    border:#007FFF 3px solid  
+    }  
+</style> 
+</head>  
+<body>  
+<script type="text/javascript">    
+document.write("<table>");  
+  
+for (var x = 1; x < 10; x++)  
+{  
+    document.write("<tr>");  
+    for (var y = 1; y <= x; y++)  
+    {  
+        document.write("<th>"+y+"*"+x+"="+y*x+"</th>");  
+    }  
+    document.write("</tr>");  
+}  
+document.write("</table>");  
+</script>  
+</body>  
 </html>
